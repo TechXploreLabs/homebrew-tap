@@ -11,7 +11,7 @@ class Seristack < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/TechXploreLabs/seristack/releases/download/v0.2.1/seristack_0.2.1_darwin_amd64.tar.gz"
-      sha256 "77d89157d2c6f4f07fab0ca53936d8f50741da4336d590c3e88038da9de9f05a"
+      sha256 "d9591360565cb8c4d1dd66e64b2703a877ff1379820154bfbe6e19bf55a1077a"
 
       define_method(:install) do
         bin.install "seristack"
@@ -19,7 +19,7 @@ class Seristack < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/TechXploreLabs/seristack/releases/download/v0.2.1/seristack_0.2.1_darwin_arm64.tar.gz"
-      sha256 "513339522fd7c35b93f4ff59f904f44da8ddd14e0aeaa7f897de06ffd5db8af0"
+      sha256 "fbe0449ce6bb97688c4eaa336ca469a4674ef1adedd575f9100b1e64881fffd6"
 
       define_method(:install) do
         bin.install "seristack"
@@ -30,14 +30,14 @@ class Seristack < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/TechXploreLabs/seristack/releases/download/v0.2.1/seristack_0.2.1_linux_amd64.tar.gz"
-      sha256 "4607e5e82c17abadf0b77ed4a14c994f66a59666e01380d5e7b41d9644e241cb"
+      sha256 "d3b7ca854faf2f81cf4430fff9ead92e43507b7cc3ea980a4cdf57d64c51336b"
       define_method(:install) do
         bin.install "seristack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/TechXploreLabs/seristack/releases/download/v0.2.1/seristack_0.2.1_linux_arm64.tar.gz"
-      sha256 "bcaeb6cdc85a6f80adab42d5c208e793d421c3d8d09d6733f3ad4cf0c652b20e"
+      sha256 "0be0a40047016f5d294396996f55924bf9a4c8faa186efb51bebfac2f42cb8c7"
       define_method(:install) do
         bin.install "seristack"
       end

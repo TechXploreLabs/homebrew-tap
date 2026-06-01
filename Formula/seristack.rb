@@ -5,21 +5,21 @@
 class Seristack < Formula
   desc "Seristack is a lightweight automation engine designed to bridge the gap between local task execution and remote triggers. Define your stacks in YAML, manage dependencies, and expose your automation via a built-in HTTP server."
   homepage "https://github.com/TechXploreLabs/seristack"
-  version "0.3.2"
+  version "0.3.3"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.2/seristack_0.3.2_darwin_amd64.tar.gz"
-      sha256 "02fdb999ee6d25379efb7803c02f8e0aa0e507fbd2d707f2707d90bb818ac345"
+      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.3/seristack_0.3.3_darwin_amd64.tar.gz"
+      sha256 "bf10f60a78ade8186e3b9e6a2a8c276e33f4ed226b5eafabaeda091a9f7f9eb6"
 
       define_method(:install) do
         bin.install "seristack"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.2/seristack_0.3.2_darwin_arm64.tar.gz"
-      sha256 "73e17f687a322db1298ab25d4ab59b479677e2734d966f3c44bf7d20d02976b6"
+      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.3/seristack_0.3.3_darwin_arm64.tar.gz"
+      sha256 "33693ee4dd101f11904b2b011a692a41ce5dff06e25a30727258418871d119d4"
 
       define_method(:install) do
         bin.install "seristack"
@@ -29,15 +29,15 @@ class Seristack < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.2/seristack_0.3.2_linux_amd64.tar.gz"
-      sha256 "0f6c32fffe130ab834e72a121d5f2a5f37d712965a69c9c691ed34e6b2806dd4"
+      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.3/seristack_0.3.3_linux_amd64.tar.gz"
+      sha256 "c073354e47756c3152894691c96562f698d0fb349e5752b25809675aab3bfd7f"
       define_method(:install) do
         bin.install "seristack"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.2/seristack_0.3.2_linux_arm64.tar.gz"
-      sha256 "e0b119baf13f3c54c90b93d3338a226c714647bdb2c362e02861d22383c42557"
+      url "https://github.com/TechXploreLabs/seristack/releases/download/v0.3.3/seristack_0.3.3_linux_arm64.tar.gz"
+      sha256 "55c58e88e3a3f32bf86e0730d1b7f41108544bf49ce74fc91fe7644abc6701cc"
       define_method(:install) do
         bin.install "seristack"
       end
